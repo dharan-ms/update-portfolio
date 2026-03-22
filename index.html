@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Dharan - Full Stack Developer Portfolio. A showcase of premium interactive digital experiences.">
+    <title>Dharan | Full Stack Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loader-content">
+            <svg class="loader-svg" viewBox="0 0 100 100">
+                <circle class="loader-circle" cx="50" cy="50" r="45"></circle>
+            </svg>
+            <h1 class="loader-text">Dharan</h1>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="logo">Dharan<span class="dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-content" data-tilt>
+            <div class="glitch-wrapper">
+                <h1 class="hero-title glitch" data-text="Hey, I'm Dharan">Hey, I'm Dharan</h1>
+            </div>
+            <div class="typewriter-container">
+                <p class="typewriter-text"><span id="typewriter"></span><span class="cursor-blink">|</span></p>
+            </div>
+            <a href="#projects" class="cta-button">
+                <span>View My Work</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title reveal-text">About Me</h2>
+            <div class="about-content glass-card">
+                <div class="about-text">
+                    <p class="reveal-text">I am a <span class="highlight">first-year college student</span> focused on
+                        <span class="highlight">Full-Stack Development</span>. My journey is defined by a relentless
+                        passion for crafting clean, interactive, and animated digital experiences.
+                    </p>
+                    <p class="reveal-text">I am actively practicing <span class="highlight">Data Structures & Algorithms
+                            (DSA)</span>, self-motivated, consistent, and constantly improving my professional skills to
+                        build future-ready web applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title reveal-text">My Arsenal</h2>
+            <div class="skills-container">
+                <!-- Skill 1 -->
+                <div class="skill-card glass-card">
+                    <div class="circular-progress" data-percent="65">
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70" class="progress"></circle>
+                        </svg>
+                        <div class="percent">
+                            <h3>65%</h3>
+                            <p>Frontend</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill 2 -->
+                <div class="skill-card glass-card">
+                    <div class="circular-progress" data-percent="45">
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70" class="progress"></circle>
+                        </svg>
+                        <div class="percent">
+                            <h3>45%</h3>
+                            <p>Backend</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill 3 -->
+                <div class="skill-card glass-card">
+                    <div class="circular-progress" data-percent="30">
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70" class="progress"></circle>
+                        </svg>
+                        <div class="percent">
+                            <h3>Basic</h3>
+                            <p>Video Editing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title reveal-text">Selected Works</h2>
+            <div class="projects-grid">
+                <!-- Project: Zylaa AI -->
+                <a href="https://zylaaa.netlify.app/" target="_blank" class="project-card glass-card" data-tilt>
+                    <div class="project-content">
+                        <h3>Zylaa AI</h3>
+                        <p>Intelligent AI Component Builder to generate UI elements seamlessly.</p>
+                        <div class="tags">
+                            <span>React</span><span>AI</span><span>Tailwind</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Project: DrawCell -->
+                <a href="https://drawcell.netlify.app/" target="_blank" class="project-card glass-card" data-tilt>
+                    <div class="project-content">
+                        <h3>DrawCell</h3>
+                        <p>Interactive web-based sketching and annotation tool with grid snapping.</p>
+                        <div class="tags">
+                            <span>Canvas</span><span>JavaScript</span><span>Netlify</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Project: Typing Clone -->
+                <a href="https://type-daw.netlify.app/" target="_blank" class="project-card glass-card" data-tilt>
+                    <div class="project-content">
+                        <h3>Typing Clone</h3>
+                        <p>Minimalist typing speed test with real-time feedback and accuracy tracking.</p>
+                        <div class="tags">
+                            <span>JavaScript</span><span>CSS</span><span>Performance</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Project 1 -->
+                <a href="https://dharan-ms.github.io/Countdown-Time/" target="_blank" class="project-card glass-card"
+                    data-tilt>
+                    <div class="project-content">
+                        <h3>Countdown Timer</h3>
+                        <p>Precise time tracking with modern UI.</p>
+                        <div class="tags">
+                            <span>JS</span><span>CSS</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Project 3 -->
+                <a href="https://dharan-ms.github.io/login-page/" target="_blank" class="project-card glass-card"
+                    data-tilt>
+                    <div class="project-content">
+                        <h3>Login Application</h3>
+                        <p>Secure and stylish authentication flow.</p>
+                        <div class="tags">
+                            <span>Forms</span><span>Validation</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Project 4 -->
+                <a href="https://dharan-ms.github.io/weather-ap/" target="_blank" class="project-card glass-card"
+                    data-tilt>
+                    <div class="project-content">
+                        <h3>Weather API App</h3>
+                        <p>Real-time weather data visualization.</p>
+                        <div class="tags">
+                            <span>Fetch API</span><span>Async</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Project 5 -->
+                <a href="https://dharan-ms.github.io/todo-new/" target="_blank" class="project-card glass-card"
+                    data-tilt>
+                    <div class="project-content">
+                        <h3>To-Do Application</h3>
+                        <p>Productivity tool with local storage.</p>
+                        <div class="tags">
+                            <span>CRUD</span><span>DOM</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Project 6 -->
+                <a href="https://dharan-ms.github.io/notes-app/" target="_blank" class="project-card glass-card"
+                    data-tilt>
+                    <div class="project-content">
+                        <h3>Notes Application</h3>
+                        <p>Digital notebook for seamless thought capture.</p>
+                        <div class="tags">
+                            <span>Storage</span><span>Edit</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Project 7 -->
+                <a href="https://dharan-ms.github.io/cal/" target="_blank" class="project-card glass-card" data-tilt>
+                    <div class="project-content">
+                        <h3>Calculator</h3>
+                        <p>Clean mathematical operations.</p>
+                        <div class="tags">
+                            <span>Math</span><span>Logic</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title reveal-text">Get In Touch</h2>
+            <div class="contact-content glass-card">
+                <p>Open for collaborations and new opportunities.</p>
+                <div class="social-links">
+                    <a href="mailto:dharanesh.rajms@gmail.com" class="social-btn"><i class="fas fa-envelope"></i></a>
+                    <a href="https://x.com/shan_dharan" target="_blank" class="social-btn">
+                        <svg class="social-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/shan_dharan" target="_blank" class="social-btn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/dharan-ms" target="_blank" class="social-btn"><i
+                            class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Engineered & Designed by <strong>Dharan</strong> &copy; 2026</p>
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+    <!-- Vanilla Tilt for 3D Cards -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+</body>
+
+</html>
+
